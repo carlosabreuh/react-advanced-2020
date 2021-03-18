@@ -7,7 +7,7 @@ const UseStateObject = () => {
     message: 'random message',
   });
   const changeMessage = () => {
-    setPerson('hello world');
+    setPerson({...person, message:'hello world'});
   }
   return(
      <>
